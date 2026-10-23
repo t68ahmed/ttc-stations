@@ -1,6 +1,5 @@
 import sys
 
-
 def main():
     total = 0
     for line in sys.stdin:
