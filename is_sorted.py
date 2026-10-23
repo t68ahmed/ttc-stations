@@ -2,14 +2,18 @@ import sys
 
 def main():
     prev_value = 0
+    
+    value_is_bigger = True
+
     for line in sys.stdin:
         line = line.removesuffix('\n')
         curr_value = int(line)
+        
         if prev_value <= curr_value:
-            value_is_bigger = True
+            value_is_bigger == True
         else:
-            value_is_bigger = False
-        prev_value = curr_value
+            value_is_bigger == False
+            prev_value = curr_value
 
     if value_is_bigger:
         print("The numbers are in ascending order.")
